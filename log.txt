@@ -1,0 +1,990 @@
+
+
+-----Tweets Log Entry Start-----
+
+Processed at: 
+Fri Feb 23 2018 14:09:48 GMT-0500 (Eastern Standard Time)
+
+terminal commands: 
+C:\Program Files\nodejs\node.exe,C:\Users\meshr\Desktop\liri-node-app\liri-node-app\liri.js,my-tweets
+
+Data Output: 
+
+-----Tweets Log Entry End-----
+
+-----Tweets Log Entry Start-----
+
+Processed at: 
+Fri Feb 23 2018 14:09:56 GMT-0500 (Eastern Standard Time)
+
+terminal commands: 
+C:\Program Files\nodejs\node.exe,C:\Users\meshr\Desktop\liri-node-app\liri-node-app\liri.js,do-what-it-says
+
+Data Output: 
+
+-----Tweets Log Entry End-----
+
+-----OMDB Log Entry Start-----
+
+Processed on:
+Fri Feb 23 2018 14:10:03 GMT-0500 (Eastern Standard Time)
+
+terminal commands:
+C:\Program Files\nodejs\node.exe,C:\Users\meshr\Desktop\liri-node-app\liri-node-app\liri.js,movie-this,jumaji
+
+Data Output: 
+
+I'm sorry, I could not find any movies that matched the title jumaji . Please check your spelling and try again.
+
+-----OMDB Log Entry End-----
+
+-----Spotify Log Entry Start-----
+Processed on:
+Fri Feb 23 2018 14:10:15 GMT-0500 (Eastern Standard Time)
+
+terminal commands:
+C:\Program Files\nodejs\node.exe,C:\Users\meshr\Desktop\liri-node-app\liri-node-app\liri.js,spotify-this-song,no woman no cry
+
+Data Output: 
+
+========= Result 1 =========
+Artist: Sheku Kanneh-Mason
+Song title: No Woman, No Cry (Arr. Cello)
+Album name: Bob Marley: No Woman, No Cry (Arr. Cello)
+URL Preview: null
+=============================
+-----Spotify Log Entry End-----
+
+-----Spotify Log Entry Start-----
+Processed on:
+Fri Feb 23 2018 14:10:54 GMT-0500 (Eastern Standard Time)
+
+terminal commands:
+C:\Program Files\nodejs\node.exe,C:\Users\meshr\Desktop\liri-node-app\liri-node-app\liri.js,spotify-this-song,Happy song
+
+Data Output: 
+
+========= Result 1 =========
+Artist: Grouplove
+Song title: Tongue Tied
+Album name: Never Trust A Happy Song
+URL Preview: https://p.scdn.co/mp3-preview/2147e7bd8762aa4f7f1ce38ba02cfa618c530758?cid=6641e75b9e9941659c928899dd22d109
+=============================
+-----Spotify Log Entry End-----
+
+-----Tweets Log Entry Start-----
+
+Processed at: 
+Fri Feb 23 2018 14:13:11 GMT-0500 (Eastern Standard Time)
+
+terminal commands: 
+C:\Program Files\nodejs\node.exe,C:\Users\meshr\Desktop\liri-node-app\liri-node-app\liri.js,my-tweets
+
+Data Output: 
+
+1. Tweet: what comes after R?
+Tweeted on: Tue Feb 20 17:46:09 +0000 2018
+
+3. Tweet: Just setting up my Twitter. #myfirstTweet
+Tweeted on: Tue Feb 20 17:44:52 +0000 2018
+
+2. Tweet: Hello World
+Tweeted on: Tue Feb 20 17:45:31 +0000 2018
+
+-----Tweets Log Entry End-----
+
+-----Tweets Log Entry Start-----
+
+Processed at: 
+Fri Feb 23 2018 14:18:31 GMT-0500 (Eastern Standard Time)
+
+terminal commands: 
+C:\Program Files\nodejs\node.exe,C:\Users\meshr\Desktop\liri-node-app\liri-node-app\liri.js,my-tweets
+
+Data Output: 
+
+1. Tweet: what comes after R?
+Tweeted on: Tue Feb 20 17:46:09 +0000 2018
+
+2. Tweet: Hello World
+Tweeted on: Tue Feb 20 17:45:31 +0000 2018
+
+3. Tweet: Just setting up my Twitter. #myfirstTweet
+Tweeted on: Tue Feb 20 17:44:52 +0000 2018
+
+-----Tweets Log Entry End-----
+
+-----Tweets Log Entry Start-----
+
+Processed at: 
+Fri Feb 23 2018 14:19:42 GMT-0500 (Eastern Standard Time)
+
+terminal commands: 
+C:\Program Files\nodejs\node.exe,C:\Users\meshr\Desktop\liri-node-app\liri-node-app\liri.js,my-tweets
+
+Data Output: 
+
+1. Tweet: yeyy.... today is Friday  :)
+Tweeted on: Fri Feb 23 19:19:38 +0000 2018
+
+-----Tweets Log Entry End-----
+
+2. Tweet: what comes after R?
+Tweeted on: Tue Feb 20 17:46:09 +0000 2018
+
+3. Tweet: Hello World
+Tweeted on: Tue Feb 20 17:45:31 +0000 2018
+
+4. Tweet: Just setting up my Twitter. #myfirstTweet
+Tweeted on: Tue Feb 20 17:44:52 +0000 2018
+
+-----Tweets Log Entry Start-----
+
+Processed at: 
+Fri Feb 23 2018 14:22:19 GMT-0500 (Eastern Standard Time)
+
+terminal commands: 
+C:\Program Files\nodejs\node.exe,C:\Users\meshr\Desktop\liri-node-app\liri-node-app\liri.js,my-tweets
+
+Data Output: 
+
+1. Tweet: yeyy.... today is Friday  :)
+Tweeted on: Fri Feb 23 19:19:38 +0000 2018
+
+2. Tweet: what comes after R?
+Tweeted on: Tue Feb 20 17:46:09 +0000 2018
+
+3. Tweet: Hello World
+Tweeted on: Tue Feb 20 17:45:31 +0000 2018
+
+4. Tweet: Just setting up my Twitter. #myfirstTweet
+Tweeted on: Tue Feb 20 17:44:52 +0000 2018
+
+-----Tweets Log Entry End-----
+
+-----Spotify Log Entry Start-----
+Processed on:
+Fri Feb 23 2018 14:22:31 GMT-0500 (Eastern Standard Time)
+
+terminal commands:
+C:\Program Files\nodejs\node.exe,C:\Users\meshr\Desktop\liri-node-app\liri-node-app\liri.js,spotify-this-song,no woman no cry
+
+Data Output: 
+
+========= Result 1 =========
+Artist: Sheku Kanneh-Mason
+Song title: No Woman, No Cry (Arr. Cello)
+Album name: Bob Marley: No Woman, No Cry (Arr. Cello)
+URL Preview: null
+=============================
+-----Spotify Log Entry End-----
+
+-----OMDB Log Entry Start-----
+
+Processed on:
+Fri Feb 23 2018 14:23:37 GMT-0500 (Eastern Standard Time)
+
+terminal commands:
+C:\Program Files\nodejs\node.exe,C:\Users\meshr\Desktop\liri-node-app\liri-node-app\liri.js,movie-this,Mr. Nobody
+
+Data Output: 
+
+Movie Title: Mr. Nobody
+Year: 2009
+IMDB rating: 7.9
+Rotten Tomatoes Rating: 66%
+Country: Belgium, Germany, Canada, France, USA, UK
+Language: English, Mohawk
+Plot: A boy stands on a station platform as a train is about to leave. Should he go with his mother or stay with his father? Infinite possibilities arise from this decision. As long as he doesn't choose, anything is possible.
+Actors: Jared Leto, Sarah Polley, Diane Kruger, Linh Dan Pham
+
+-----OMDB Log Entry End-----
+
+-----Tweets Log Entry Start-----
+
+Processed at: 
+Fri Feb 23 2018 14:29:00 GMT-0500 (Eastern Standard Time)
+
+terminal commands: 
+C:\Program Files\nodejs\node.exe,C:\Users\meshr\Desktop\liri-node-app\liri-node-app\liri.js,my-tweets
+
+Data Output: 
+
+1. Tweet: yeyy.... today is Friday  :)
+Tweeted on: Fri Feb 23 19:19:38 +0000 2018
+
+-----Tweets Log Entry End-----
+
+2. Tweet: what comes after R?
+Tweeted on: Tue Feb 20 17:46:09 +0000 2018
+
+4. Tweet: Just setting up my Twitter. #myfirstTweet
+Tweeted on: Tue Feb 20 17:44:52 +0000 2018
+
+3. Tweet: Hello World
+Tweeted on: Tue Feb 20 17:45:31 +0000 2018
+
+-----OMDB Log Entry Start-----
+
+Processed on:
+Fri Feb 23 2018 14:29:28 GMT-0500 (Eastern Standard Time)
+
+terminal commands:
+C:\Program Files\nodejs\node.exe,C:\Users\meshr\Desktop\liri-node-app\liri-node-app\liri.js,movie-this,Mr. Nobody
+
+Data Output: 
+
+Movie Title: Mr. Nobody
+Year: 2009
+IMDB rating: 7.9
+Rotten Tomatoes Rating: 66%
+Country: Belgium, Germany, Canada, France, USA, UK
+Language: English, Mohawk
+Plot: A boy stands on a station platform as a train is about to leave. Should he go with his mother or stay with his father? Infinite possibilities arise from this decision. As long as he doesn't choose, anything is possible.
+Actors: Jared Leto, Sarah Polley, Diane Kruger, Linh Dan Pham
+
+-----OMDB Log Entry End-----
+
+
+========= Result 1 =========
+Artist: Juris
+Song title: Hindi Wala
+Album name: Himig Handog P-Pop Love Songs (2014)
+URL Preview: https://p.scdn.co/mp3-preview/d908ea38971373d139eef68e99ac58cb9060fa0f?cid=6641e75b9e9941659c928899dd22d109
+=============================
+-----Spotify Log Entry Start-----
+Processed on:
+Fri Feb 23 2018 15:09:52 GMT-0500 (Eastern Standard Time)
+
+terminal commands:
+C:\Program Files\nodejs\node.exe,C:\Users\meshr\Desktop\liri-node-app\liri-node-app\liri.js,spotify-this-song,hindi love songs
+
+Data Output: 
+-----Spotify Log Entry End-----
+
+-----Tweets Log Entry Start-----
+
+Processed at: 
+Fri Feb 23 2018 15:26:56 GMT-0500 (Eastern Standard Time)
+
+terminal commands: 
+C:\Program Files\nodejs\node.exe,C:\Users\meshr\Desktop\liri-node-app\liri-node-app\liri.js,my-tweets
+
+Data Output: 
+
+1. Tweet: yeyy.... today is Friday  :)
+Tweeted on: Fri Feb 23 19:19:38 +0000 2018
+
+3. Tweet: Hello World
+Tweeted on: Tue Feb 20 17:45:31 +0000 2018
+
+2. Tweet: what comes after R?
+Tweeted on: Tue Feb 20 17:46:09 +0000 2018
+
+4. Tweet: Just setting up my Twitter. #myfirstTweet
+Tweeted on: Tue Feb 20 17:44:52 +0000 2018
+
+-----Tweets Log Entry End-----
+
+-----Spotify Log Entry Start-----
+Processed on:
+Fri Feb 23 2018 15:27:11 GMT-0500 (Eastern Standard Time)
+
+terminal commands:
+C:\Program Files\nodejs\node.exe,C:\Users\meshr\Desktop\liri-node-app\liri-node-app\liri.js,spotify-this-song,hindi love songs
+
+Data Output: 
+-----Spotify Log Entry End-----
+
+
+========= Result 1 =========
+Artist: Juris
+Song title: Hindi Wala
+Album name: Himig Handog P-Pop Love Songs (2014)
+URL Preview: https://p.scdn.co/mp3-preview/d908ea38971373d139eef68e99ac58cb9060fa0f?cid=6641e75b9e9941659c928899dd22d109
+=============================
+Movie Title: Mr. Nobody
+Year: 2009
+IMDB rating: 7.9
+Rotten Tomatoes Rating: 66%
+Country: Belgium, Germany, Canada, France, USA, UK
+Language: English, Mohawk
+Plot: A boy stands on a station platform as a train is about to leave. Should he go with his mother or stay with his father? Infinite possibilities arise from this decision. As long as he doesn't choose, anything is possible.
+Actors: Jared Leto, Sarah Polley, Diane Kruger, Linh Dan Pham
+
+-----OMDB Log Entry End-----
+
+-----OMDB Log Entry Start-----
+
+Processed on:
+Fri Feb 23 2018 15:27:31 GMT-0500 (Eastern Standard Time)
+
+terminal commands:
+C:\Program Files\nodejs\node.exe,C:\Users\meshr\Desktop\liri-node-app\liri-node-app\liri.js,movie-this,Mr. Nobody
+
+Data Output: 
+
+-----Tweets Log Entry Start-----
+
+Processed at: 
+Fri Feb 23 2018 15:27:58 GMT-0500 (Eastern Standard Time)
+
+terminal commands: 
+C:\Program Files\nodejs\node.exe,C:\Users\meshr\Desktop\liri-node-app\liri-node-app\liri.js,do-what-it-says
+
+Data Output: 
+
+1. Tweet: yeyy.... today is Friday  :)
+Tweeted on: Fri Feb 23 19:19:38 +0000 2018
+
+2. Tweet: what comes after R?
+Tweeted on: Tue Feb 20 17:46:09 +0000 2018
+
+4. Tweet: Just setting up my Twitter. #myfirstTweet
+Tweeted on: Tue Feb 20 17:44:52 +0000 2018
+
+3. Tweet: Hello World
+Tweeted on: Tue Feb 20 17:45:31 +0000 2018
+
+-----Tweets Log Entry End-----
+
+-----Spotify Log Entry Start-----
+Processed on:
+Fri Feb 23 2018 15:28:43 GMT-0500 (Eastern Standard Time)
+
+terminal commands:
+C:\Program Files\nodejs\node.exe,C:\Users\meshr\Desktop\liri-node-app\liri-node-app\liri.js,spotify-this-song,because am happy"
+
+
+Data Output: 
+
+========= Result 1 =========
+Artist: Gabriel Martinez
+Song title: Because i am Happy
+Album name: Because i am Happy
+URL Preview: https://p.scdn.co/mp3-preview/7e1d1c6dffb211c268981e63095964462b9adc5d?cid=6641e75b9e9941659c928899dd22d109
+=============================
+-----Spotify Log Entry End-----
+
+-----Spotify Log Entry Start-----
+Processed on:
+Fri Feb 23 2018 18:50:37 GMT-0500 (Eastern Standard Time)
+
+terminal commands:
+C:\Program Files\nodejs\node.exe,C:\Users\meshr\Desktop\liri-node-app\liri-node-app\liri.js,spotify-this-song,crazy
+
+Data Output: 
+
+========= Result 1 =========
+Artist: Gnarls Barkley
+Song title: Crazy
+Album name: St. Elsewhere
+URL Preview: https://p.scdn.co/mp3-preview/758fda586b074aeedb5e109bac266e3b2ac2dd01?cid=6641e75b9e9941659c928899dd22d109
+=============================
+-----Spotify Log Entry End-----
+
+-----Spotify Log Entry Start-----
+Processed on:
+Fri Feb 23 2018 18:52:10 GMT-0500 (Eastern Standard Time)
+
+terminal commands:
+C:\Program Files\nodejs\node.exe,C:\Users\meshr\Desktop\liri-node-app\liri-node-app\liri.js,spotify-this-song,crazy
+
+Data Output: 
+
+========= Result 1 =========
+Artist: Gnarls Barkley
+Song title: Crazy
+Album name: St. Elsewhere
+URL Preview: https://p.scdn.co/mp3-preview/758fda586b074aeedb5e109bac266e3b2ac2dd01?cid=6641e75b9e9941659c928899dd22d109
+=============================
+-----Spotify Log Entry End-----
+
+-----Spotify Log Entry Start-----
+Processed on:
+Fri Feb 23 2018 18:53:59 GMT-0500 (Eastern Standard Time)
+
+terminal commands:
+C:\Program Files\nodejs\node.exe,C:\Users\meshr\Desktop\liri-node-app\liri-node-app\liri.js,spotify-this-song,crazy
+
+Data Output: 
+
+========= Result 1 =========
+Artist: Gnarls Barkley
+Song title: Crazy
+Album name: St. Elsewhere
+URL Preview: https://p.scdn.co/mp3-preview/758fda586b074aeedb5e109bac266e3b2ac2dd01?cid=6641e75b9e9941659c928899dd22d109
+=============================
+-----Spotify Log Entry End-----
+
+-----Spotify Log Entry End-----
+
+-----Spotify Log Entry Start-----
+Processed on:
+Fri Feb 23 2018 19:01:35 GMT-0500 (Eastern Standard Time)
+
+terminal commands:
+C:\Program Files\nodejs\node.exe,C:\Users\meshr\Desktop\liri-node-app\liri-node-app\liri.js,spotify-this-song,crazy
+
+Data Output: 
+
+========= Result 1 =========
+Artist: Gnarls Barkley
+Song title: Crazy
+Album name: St. Elsewhere
+URL Preview: https://p.scdn.co/mp3-preview/758fda586b074aeedb5e109bac266e3b2ac2dd01?cid=6641e75b9e9941659c928899dd22d109
+=============================
+-----Tweets Log Entry Start-----
+
+at: 
+Fri Feb 23 2018 20:03:32 GMT-0500 (Eastern Standard Time)
+terminal commands: 
+C:\Program Files\nodejs\node.exe,C:\Users\meshr\Desktop\liri-node-app\liri-node-app\liri.js,do-what-it-says
+
+Data Output: 
+
+1. Tweet: yeyy.... today is Friday  :)
+Tweeted on: Fri Feb 23 19:19:38 +0000 2018
+
+2. Tweet: what comes after R?
+Tweeted on: Tue Feb 20 17:46:09 +0000 2018
+
+3. Tweet: Hello World
+Tweeted on: Tue Feb 20 17:45:31 +0000 2018
+
+4. Tweet: Just setting up my Twitter. #myfirstTweet
+Tweeted on: Tue Feb 20 17:44:52 +0000 2018
+
+-----Tweets Log Entry End----------Tweets Log Entry Start-----
+
+at: 
+Fri Feb 23 2018 20:07:34 GMT-0500 (Eastern Standard Time)
+terminal commands: 
+C:\Program Files\nodejs\node.exe,C:\Users\meshr\Desktop\liri-node-app\liri-node-app\liri.js,do-what-it-says
+
+Data Output: 
+
+1. Tweet: yeyy.... today is Friday  :)
+Tweeted on: Fri Feb 23 19:19:38 +0000 2018
+
+2. Tweet: what comes after R?
+Tweeted on: Tue Feb 20 17:46:09 +0000 2018
+
+3. Tweet: Hello World
+Tweeted on: Tue Feb 20 17:45:31 +0000 2018
+
+4. Tweet: Just setting up my Twitter. #myfirstTweet
+Tweeted on: Tue Feb 20 17:44:52 +0000 2018
+
+-----Tweets Log Entry End----------Spotify Log Entry Start-----
+Processed on:
+Fri Feb 23 2018 20:07:43 GMT-0500 (Eastern Standard Time)
+
+terminal commands:
+C:\Program Files\nodejs\node.exe,C:\Users\meshr\Desktop\liri-node-app\liri-node-app\liri.js,spotify-this-song,crazy
+
+Data Output: 
+
+========= Result 1 =========
+Artist: Gnarls Barkley
+Song title: Crazy
+Album name: St. Elsewhere
+URL Preview: https://p.scdn.co/mp3-preview/758fda586b074aeedb5e109bac266e3b2ac2dd01?cid=6641e75b9e9941659c928899dd22d109
+=============================
+-----Spotify Log Entry End-----
+
+-----OMDB Log Entry Start-----
+
+Processed on:
+Fri Feb 23 2018 20:07:55 GMT-0500 (Eastern Standard Time)
+
+terminal commands:
+C:\Program Files\nodejs\node.exe,C:\Users\meshr\Desktop\liri-node-app\liri-node-app\liri.js,movie-this,Mr. Nobody
+
+Data Output: 
+
+Movie Title: Mr. Nobody
+Year: 2009
+IMDB rating: 7.9
+Rotten Tomatoes Rating: 66%
+Country: Belgium, Germany, Canada, France, USA, UK
+Language: English, Mohawk
+Plot: A boy stands on a station platform as a train is about to leave. Should he go with his mother or stay with his father? Infinite possibilities arise from this decision. As long as he doesn't choose, anything is possible.
+Actors: Jared Leto, Sarah Polley, Diane Kruger, Linh Dan Pham
+
+-----OMDB Log Entry End-----
+
+-----Tweets Log Entry Start-----
+
+at: 
+Fri Feb 23 2018 20:08:03 GMT-0500 (Eastern Standard Time)
+terminal commands: 
+C:\Program Files\nodejs\node.exe,C:\Users\meshr\Desktop\liri-node-app\liri-node-app\liri.js,my-tweets
+
+Data Output: 
+
+1. Tweet: yeyy.... today is Friday  :)
+Tweeted on: Fri Feb 23 19:19:38 +0000 2018
+
+3. Tweet: Hello World
+Tweeted on: Tue Feb 20 17:45:31 +0000 2018
+
+2. Tweet: what comes after R?
+Tweeted on: Tue Feb 20 17:46:09 +0000 2018
+
+4. Tweet: Just setting up my Twitter. #myfirstTweet
+Tweeted on: Tue Feb 20 17:44:52 +0000 2018
+
+-----Tweets Log Entry End----------Tweets Log Entry Start-----
+
+at: 
+Fri Feb 23 2018 20:17:45 GMT-0500 (Eastern Standard Time)
+terminal commands: 
+C:\Program Files\nodejs\node.exe,C:\Users\meshr\Desktop\liri-node-app\liri-node-app\liri.js,my-tweets
+
+Data Output: 
+
+1. Tweet: yeyy.... today is Friday  :)
+Tweeted on: Fri Feb 23 19:19:38 +0000 2018
+
+2. Tweet: what comes after R?
+Tweeted on: Tue Feb 20 17:46:09 +0000 2018
+
+3. Tweet: Hello World
+Tweeted on: Tue Feb 20 17:45:31 +0000 2018
+
+4. Tweet: Just setting up my Twitter. #myfirstTweet
+Tweeted on: Tue Feb 20 17:44:52 +0000 2018
+
+-----Tweets Log Entry End----------OMDB Log Entry Start-----
+
+Processed on:
+Fri Feb 23 2018 20:17:50 GMT-0500 (Eastern Standard Time)
+
+terminal commands:
+C:\Program Files\nodejs\node.exe,C:\Users\meshr\Desktop\liri-node-app\liri-node-app\liri.js,movie-this,Mr. Nobody
+
+Data Output: 
+
+Movie Title: Mr. Nobody
+Year: 2009
+IMDB rating: 7.9
+Rotten Tomatoes Rating: 66%
+Country: Belgium, Germany, Canada, France, USA, UK
+Language: English, Mohawk
+Plot: A boy stands on a station platform as a train is about to leave. Should he go with his mother or stay with his father? Infinite possibilities arise from this decision. As long as he doesn't choose, anything is possible.
+Actors: Jared Leto, Sarah Polley, Diane Kruger, Linh Dan Pham
+
+-----OMDB Log Entry End-----
+
+-----Spotify Log Entry Start-----
+Processed on:
+Fri Feb 23 2018 20:17:57 GMT-0500 (Eastern Standard Time)
+
+terminal commands:
+C:\Program Files\nodejs\node.exe,C:\Users\meshr\Desktop\liri-node-app\liri-node-app\liri.js,spotify-this-song,crazy
+
+Data Output: 
+
+========= Result 1 =========
+Artist: Gnarls Barkley
+Song title: Crazy
+Album name: St. Elsewhere
+URL Preview: https://p.scdn.co/mp3-preview/758fda586b074aeedb5e109bac266e3b2ac2dd01?cid=6641e75b9e9941659c928899dd22d109
+=============================
+-----Spotify Log Entry End-----
+
+-----Tweets Log Entry Start-----
+
+at: 
+Fri Feb 23 2018 20:18:04 GMT-0500 (Eastern Standard Time)
+terminal commands: 
+C:\Program Files\nodejs\node.exe,C:\Users\meshr\Desktop\liri-node-app\liri-node-app\liri.js,do-what-it-says
+
+Data Output: 
+
+1. Tweet: yeyy.... today is Friday  :)
+Tweeted on: Fri Feb 23 19:19:38 +0000 2018
+
+2. Tweet: what comes after R?
+Tweeted on: Tue Feb 20 17:46:09 +0000 2018
+
+4. Tweet: Just setting up my Twitter. #myfirstTweet
+Tweeted on: Tue Feb 20 17:44:52 +0000 2018
+
+3. Tweet: Hello World
+Tweeted on: Tue Feb 20 17:45:31 +0000 2018
+
+-----Tweets Log Entry End----------Tweets Log Entry Start-----
+
+at: 
+Fri Feb 23 2018 20:53:03 GMT-0500 (Eastern Standard Time)
+terminal commands: 
+C:\Program Files\nodejs\node.exe,C:\Users\meshr\Desktop\liri-node-app\liri-node-app\liri.js,my-tweets
+
+Data Output: 
+
+1. Tweet: yeyy.... today is Friday  :)
+Tweeted on: Fri Feb 23 19:19:38 +0000 2018
+
+3. Tweet: Hello World
+Tweeted on: Tue Feb 20 17:45:31 +0000 2018
+
+-----Tweets Log Entry End-----4. Tweet: Just setting up my Twitter. #myfirstTweet
+Tweeted on: Tue Feb 20 17:44:52 +0000 2018
+
+2. Tweet: what comes after R?
+Tweeted on: Tue Feb 20 17:46:09 +0000 2018
+
+-----Tweets Log Entry Start-----
+
+at: 
+Fri Feb 23 2018 20:53:21 GMT-0500 (Eastern Standard Time)
+terminal commands: 
+C:\Program Files\nodejs\node.exe,C:\Users\meshr\Desktop\liri-node-app\liri-node-app\liri.js,my-tweets
+
+Data Output: 
+
+1. Tweet: yeyy.... today is Friday  :)
+Tweeted on: Fri Feb 23 19:19:38 +0000 2018
+
+2. Tweet: what comes after R?
+Tweeted on: Tue Feb 20 17:46:09 +0000 2018
+
+3. Tweet: Hello World
+Tweeted on: Tue Feb 20 17:45:31 +0000 2018
+
+4. Tweet: Just setting up my Twitter. #myfirstTweet
+Tweeted on: Tue Feb 20 17:44:52 +0000 2018
+
+-----Tweets Log Entry End----------Tweets Log Entry Start-----
+
+at: 
+Fri Feb 23 2018 20:53:55 GMT-0500 (Eastern Standard Time)
+terminal commands: 
+C:\Program Files\nodejs\node.exe,C:\Users\meshr\Desktop\liri-node-app\liri-node-app\liri.js,my-tweets
+
+Data Output: 
+
+2. Tweet: what comes after R?
+Tweeted on: Tue Feb 20 17:46:09 +0000 2018
+
+3. Tweet: Hello World
+Tweeted on: Tue Feb 20 17:45:31 +0000 2018
+
+4. Tweet: Just setting up my Twitter. #myfirstTweet
+Tweeted on: Tue Feb 20 17:44:52 +0000 2018
+
+1. Tweet: yeyy.... today is Friday  :)
+Tweeted on: Fri Feb 23 19:19:38 +0000 2018
+
+-----Tweets Log Entry End----------Tweets Log Entry Start-----
+
+at: 
+Fri Feb 23 2018 21:00:22 GMT-0500 (Eastern Standard Time)
+terminal commands: 
+C:\Program Files\nodejs\node.exe,C:\Users\meshr\Desktop\liri-node-app\liri-node-app\liri.js,my-tweets
+
+Data Output: 
+
+1. Tweet: yeyy.... today is Friday  :)
+Tweeted on: Fri Feb 23 19:19:38 +0000 2018
+
+2. Tweet: what comes after R?
+Tweeted on: Tue Feb 20 17:46:09 +0000 2018
+
+4. Tweet: Just setting up my Twitter. #myfirstTweet
+Tweeted on: Tue Feb 20 17:44:52 +0000 2018
+
+3. Tweet: Hello World
+Tweeted on: Tue Feb 20 17:45:31 +0000 2018
+
+-----Tweets Log Entry End----------Tweets Log Entry Start-----
+
+at: 
+Fri Feb 23 2018 21:00:27 GMT-0500 (Eastern Standard Time)
+terminal commands: 
+C:\Program Files\nodejs\node.exe,C:\Users\meshr\Desktop\liri-node-app\liri-node-app\liri.js,my-tweets
+
+Data Output: 
+
+1. Tweet: yeyy.... today is Friday  :)
+Tweeted on: Fri Feb 23 19:19:38 +0000 2018
+
+2. Tweet: what comes after R?
+Tweeted on: Tue Feb 20 17:46:09 +0000 2018
+
+4. Tweet: Just setting up my Twitter. #myfirstTweet
+Tweeted on: Tue Feb 20 17:44:52 +0000 2018
+
+3. Tweet: Hello World
+Tweeted on: Tue Feb 20 17:45:31 +0000 2018
+
+-----Tweets Log Entry End----------Tweets Log Entry End----------Tweets Log Entry Start-----
+
+at: 
+Fri Feb 23 2018 21:02:33 GMT-0500 (Eastern Standard Time)
+terminal commands: 
+C:\Program Files\nodejs\node.exe,C:\Users\meshr\Desktop\liri-node-app\liri-node-app\liri.js,my-tweets
+
+Data Output: 
+
+1. Tweet: yeyy.... today is Friday  :)
+Tweeted on: Fri Feb 23 19:19:38 +0000 2018
+
+2. Tweet: what comes after R?
+Tweeted on: Tue Feb 20 17:46:09 +0000 2018
+
+3. Tweet: Hello World
+Tweeted on: Tue Feb 20 17:45:31 +0000 2018
+
+4. Tweet: Just setting up my Twitter. #myfirstTweet
+Tweeted on: Tue Feb 20 17:44:52 +0000 2018
+
+-----Tweets Log Entry Start-----
+
+at: 
+Fri Feb 23 2018 21:05:39 GMT-0500 (Eastern Standard Time)
+terminal commands: 
+C:\Program Files\nodejs\node.exe,C:\Users\meshr\Desktop\liri-node-app\liri-node-app\liri.js,my-tweets
+
+Data Output: 
+
+1. Tweet: yeyy.... today is Friday  :)
+Tweeted on: Fri Feb 23 19:19:38 +0000 2018
+
+2. Tweet: what comes after R?
+Tweeted on: Tue Feb 20 17:46:09 +0000 2018
+
+3. Tweet: Hello World
+Tweeted on: Tue Feb 20 17:45:31 +0000 2018
+
+4. Tweet: Just setting up my Twitter. #myfirstTweet
+Tweeted on: Tue Feb 20 17:44:52 +0000 2018
+
+-----Tweets Log Entry End----------Tweets Log Entry Start-----
+
+at: 
+Fri Feb 23 2018 21:06:43 GMT-0500 (Eastern Standard Time)
+terminal commands: 
+C:\Program Files\nodejs\node.exe,C:\Users\meshr\Desktop\liri-node-app\liri-node-app\liri.js,my-tweets
+
+Data Output: 
+
+1. Tweet: yeyy.... today is Friday  :)
+Tweeted on: Fri Feb 23 19:19:38 +0000 2018
+
+2. Tweet: what comes after R?
+Tweeted on: Tue Feb 20 17:46:09 +0000 2018
+
+3. Tweet: Hello World
+Tweeted on: Tue Feb 20 17:45:31 +0000 2018
+
+4. Tweet: Just setting up my Twitter. #myfirstTweet
+Tweeted on: Tue Feb 20 17:44:52 +0000 2018
+
+-----Tweets Log Entry End----------OMDB Log Entry Start-----
+
+Processed on:
+Fri Feb 23 2018 21:07:26 GMT-0500 (Eastern Standard Time)
+
+terminal commands:
+C:\Program Files\nodejs\node.exe,C:\Users\meshr\Desktop\liri-node-app\liri-node-app\liri.js,movie-this
+
+Data Output: 
+
+Movie Title: Mr. Nobody
+Year: 2009
+IMDB rating: 7.9
+Rotten Tomatoes Rating: 66%
+Country: Belgium, Germany, Canada, France, USA, UK
+Language: English, Mohawk
+Plot: A boy stands on a station platform as a train is about to leave. Should he go with his mother or stay with his father? Infinite possibilities arise from this decision. As long as he doesn't choose, anything is possible.
+Actors: Jared Leto, Sarah Polley, Diane Kruger, Linh Dan Pham
+
+-----OMDB Log Entry End-----
+
+-----Spotify Log Entry Start-----
+Processed on:
+Fri Feb 23 2018 21:07:51 GMT-0500 (Eastern Standard Time)
+
+terminal commands:
+C:\Program Files\nodejs\node.exe,C:\Users\meshr\Desktop\liri-node-app\liri-node-app\liri.js,spotify-this-song
+
+Data Output: 
+-----Spotify Log Entry End-----
+
+
+========= Result 1 =========
+Artist: Ace of Base
+Song title: The Sign
+Album name: The Sign (US Album) [Remastered]
+URL Preview: https://p.scdn.co/mp3-preview/4c463359f67dd3546db7294d236dd0ae991882ff?cid=6641e75b9e9941659c928899dd22d109
+=============================
+-----Tweets Log Entry Start-----
+
+at: 
+Fri Feb 23 2018 21:11:22 GMT-0500 (Eastern Standard Time)
+terminal commands: 
+C:\Program Files\nodejs\node.exe,C:\Users\meshr\Desktop\liri-node-app\liri-node-app\liri.js,do-what-it-says
+
+Data Output: 
+
+1. Tweet: yeyy.... today is Friday  :)
+Tweeted on: Fri Feb 23 19:19:38 +0000 2018
+
+2. Tweet: what comes after R?
+Tweeted on: Tue Feb 20 17:46:09 +0000 2018
+
+3. Tweet: Hello World
+Tweeted on: Tue Feb 20 17:45:31 +0000 2018
+
+4. Tweet: Just setting up my Twitter. #myfirstTweet
+Tweeted on: Tue Feb 20 17:44:52 +0000 2018
+
+-----Tweets Log Entry End----------Spotify Log Entry Start-----
+Processed on:
+Fri Feb 23 2018 21:11:41 GMT-0500 (Eastern Standard Time)
+
+terminal commands:
+C:\Program Files\nodejs\node.exe,C:\Users\meshr\Desktop\liri-node-app\liri-node-app\liri.js,spotify-this-song,happy
+
+Data Output: 
+-----Spotify Log Entry End-----
+
+
+========= Result 1 =========
+Artist: Old Dominion
+Song title: Written in the Sand
+Album name: Happy Endings
+URL Preview: https://p.scdn.co/mp3-preview/359e57ee6223012c21e12eeb5ad310a72cfb8cd3?cid=6641e75b9e9941659c928899dd22d109
+=============================
+-----OMDB Log Entry Start-----
+
+Processed on:
+Fri Feb 23 2018 21:11:58 GMT-0500 (Eastern Standard Time)
+
+terminal commands:
+C:\Program Files\nodejs\node.exe,C:\Users\meshr\Desktop\liri-node-app\liri-node-app\liri.js,movie-this,frozen
+
+Data Output: 
+
+Movie Title: Frozen
+Year: 2013
+IMDB rating: 7.5
+Rotten Tomatoes Rating: 90%
+Country: USA
+Language: English, Norwegian
+Plot: When the newly-crowned Queen Elsa accidentally uses her power to turn things into ice to curse her home in infinite winter, her sister Anna teams up with a mountain man, his playful reindeer, and a snowman to change the weather condition.
+Actors: Kristen Bell, Idina Menzel, Jonathan Groff, Josh Gad
+
+-----OMDB Log Entry End-----
+
+-----Spotify Log Entry Start-----
+Processed on:
+Fri Feb 23 2018 21:13:55 GMT-0500 (Eastern Standard Time)
+
+terminal commands:
+C:\Program Files\nodejs\node.exe,C:\Users\meshr\Desktop\liri-node-app\liri-node-app\liri.js,spotify-this-song,kahna hi kya
+
+Data Output: 
+-----Spotify Log Entry End-----
+
+-----Spotify Log Entry Start-----
+Processed on:
+Fri Feb 23 2018 21:14:11 GMT-0500 (Eastern Standard Time)
+
+terminal commands:
+C:\Program Files\nodejs\node.exe,C:\Users\meshr\Desktop\liri-node-app\liri-node-app\liri.js,spotify-this-song,children
+
+Data Output: 
+-----Spotify Log Entry End-----
+
+
+========= Result 1 =========
+Artist: Marilyn Manson
+Song title: Sweet Dreams (Are Made Of This)
+Album name: Smells Like Children
+URL Preview: null
+=============================
+-----Spotify Log Entry Start-----
+Processed on:
+Fri Feb 23 2018 21:15:41 GMT-0500 (Eastern Standard Time)
+
+terminal commands:
+C:\Program Files\nodejs\node.exe,C:\Users\meshr\Desktop\liri-node-app\liri-node-app\liri.js,spotify-this-song,children
+
+Data Output: 
+-----Spotify Log Entry End-----
+
+
+========= Result 1 =========
+Artist: Marilyn Manson
+Song title: Sweet Dreams (Are Made Of This)
+Album name: Smells Like Children
+URL Preview: null
+=============================
+-----OMDB Log Entry Start-----
+
+Processed on:
+Fri Feb 23 2018 21:15:47 GMT-0500 (Eastern Standard Time)
+
+terminal commands:
+C:\Program Files\nodejs\node.exe,C:\Users\meshr\Desktop\liri-node-app\liri-node-app\liri.js,movie-this,frozen
+
+Data Output: 
+
+Movie Title: Frozen
+Year: 2013
+IMDB rating: 7.5
+Rotten Tomatoes Rating: 90%
+Country: USA
+Language: English, Norwegian
+Plot: When the newly-crowned Queen Elsa accidentally uses her power to turn things into ice to curse her home in infinite winter, her sister Anna teams up with a mountain man, his playful reindeer, and a snowman to change the weather condition.
+Actors: Kristen Bell, Idina Menzel, Jonathan Groff, Josh Gad
+
+-----OMDB Log Entry End-----
+
+-----Tweets Log Entry Start-----
+
+at: 
+Fri Feb 23 2018 21:15:56 GMT-0500 (Eastern Standard Time)
+terminal commands: 
+C:\Program Files\nodejs\node.exe,C:\Users\meshr\Desktop\liri-node-app\liri-node-app\liri.js,do-what-it-says
+
+Data Output: 
+
+1. Tweet: yeyy.... today is Friday  :)
+Tweeted on: Fri Feb 23 19:19:38 +0000 2018
+
+2. Tweet: what comes after R?
+Tweeted on: Tue Feb 20 17:46:09 +0000 2018
+
+3. Tweet: Hello World
+Tweeted on: Tue Feb 20 17:45:31 +0000 2018
+
+4. Tweet: Just setting up my Twitter. #myfirstTweet
+Tweeted on: Tue Feb 20 17:44:52 +0000 2018
+
+-----Tweets Log Entry End----------Tweets Log Entry Start-----
+
+at: 
+Fri Feb 23 2018 21:16:04 GMT-0500 (Eastern Standard Time)
+terminal commands: 
+C:\Program Files\nodejs\node.exe,C:\Users\meshr\Desktop\liri-node-app\liri-node-app\liri.js,my-tweets
+
+Data Output: 
+
+1. Tweet: yeyy.... today is Friday  :)
+Tweeted on: Fri Feb 23 19:19:38 +0000 2018
+
+2. Tweet: what comes after R?
+Tweeted on: Tue Feb 20 17:46:09 +0000 2018
+
+3. Tweet: Hello World
+Tweeted on: Tue Feb 20 17:45:31 +0000 2018
+
+4. Tweet: Just setting up my Twitter. #myfirstTweet
+Tweeted on: Tue Feb 20 17:44:52 +0000 2018
+
+-----Tweets Log Entry End-----

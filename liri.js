@@ -1,229 +1,218 @@
-require("dotenv").config
+var fs = require('fs'); 
 
-// require the keys.js file that holds the twitter keys
-var twitterKeysObject = require('./keys.js');
+var dotenv = require("dotenv").config();
+var keys = require("./keys.js");
+var Twitter = require("twitter");
+var Spotify = require('node-spotify-api');
+var request = require('request');
 
-// npm install twitter, npm install spotify, npm install request
-var Twitter = require('twitter');
-var Spotify = require('spotify');
-var Request = require('request');
 
-// require Node built in fs library package for filesystem access
-var fs = require('fs');
-
-// the data is received as an object, but original data was an object too
-// so peel back one layer and get to the actual keys object
-var twitterKeys = twitterKeysObject.twitterKeys;
-
+// Grabs the command from the terminal
 var command = process.argv[2];
-var commandArgument = process.argv[3];
+var searchValue = "";
 
-switch(command) {
+// Puts together the search value into one string
+for (var i = 3; i < process.argv.length; i++) {
+    searchValue += process.argv[i] + " ";
+};
 
-	// handle my tweet commands
-	case 'my-tweets':
-	myTweets();
-	break;
+// Error Functions 
+function errorFunction(respError) {
+    if (respError) {
+        return console.log("Error occured: ", respError);
+     }
+};
 
-	// handle the spotify-this-song command
-	case 'spotify-this-song':
-	mySpotify(commandArgument);
-	break;
+// For logging to log.txt
+function errorFunctionStart (respError) {
+    errorFunction();
+    console.log(" Log Started ");
+};
 
-	// handle the movie-this command
-	case 'movie-this':
-	movieThis(commandArgument);
-	break;
+function errorFunctionEnd (respError) {
+    errorFunction();
+    console.log("Log Ended ");
+};
 
-	// handle the do-what-it-says command
-	case 'do-what-it-says':
-	doWhatItSays();
-	break;
+// -------------------- Twitter my-tweets ----------------------------
+function getTweets() {
 
-	// default response when command is not valid
-	default:
-	 console.log("Error, Please try again");
+    // Accesses Twitter Keys
+    var client = new Twitter(keys.twitter); 
+    var params = {count: 20};
 
-}
+    client.get('statuses/user_timeline', params, function(respError, tweets, response) {
 
-// for my-tweets case
-function myTweets() {
-
-	// set up credential aobject for Twitter access
-	var client = new Twitter({
-		consumer_key: twitterKeys.consumer_key,
-		consumer_secret: twitterKeys.consumer_secret,
-		access_token_key: twitterKeys.access_token_key,
-		access_token_secret: twitterKeys.access_token_secret
-	});
-
-	var params =   {	count:20,
-					trim_user: false,
-					exclude_replies: true,
-					include_rts: false };
-
-	// get the 20 most recent tweets, making sure to exclude replies and retweets
-	client.get('statuses/user_timeline',params, function(error,tweets,responce){
-		
-		// if an error  caught, display error msg and exit out of the function
-		if(error) return console.log("Error"  + error);
-
-		// log the command issued to the log.txt file
-		logCommand();
-
-		// loop through the 20 returned tweets and log their time and content
-		for(var i = 0 ; i < tweets.length ; i ++) {
-			logThis("========================================");
-			logThis(tweets[i].created_at);
-			logThis(tweets[i].text);
-			logThis("========================================");
-		}
-	});
-
-}
-
-// for  spotify-this-song case
-function mySpotify(receivedSong) {
-	// set up credential aobject for Twitter access
-	// var spotify = new Spotify(keys.spotify);
-	var mySong = receivedSong ? receivedSong : 'The Sign Ace of Base';
-		// var Spotify = new Spotify({
-		//   id: <your spotify client id>,
-		//   secret: <your spotify client secret>
-		// });
+        errorFunction();
+        // if (error) return console.log('Twitter error: ' + error);
 
 
-	Spotify.search({
-			type: 'track', 
-			query: mySong
-		}, function(err,data){
+        fs.appendFileSync("log.txt", "-----Tweets Log Entry Start-----\n\nat: \n" + Date() + "\n" + "terminal commands: \n" + process.argv + "\n\n" + "Data Output: \n\n", errorFunctionStart());
 
-		// if an error is caught in the call, display that and exit the function
-		if(err) return console.log("Spotify error" + err);
+        console.log("\n-------------- My Latest Tweets --------------\n");
 
-		// if the song is not found in the Spotify database, log that and exit the function
-		if(data.tracks.item.length == 0 ) return (console.log("No such song found!"));
+        for (i = 0; i < tweets.length; i++) {
+            console.log(i + 1 + ". Tweet: ", tweets[i].text);
 
-		// log the command issued to the log.txt file
-		logCommand();
+            // For alingment once the number of the tweet is 10 or higher
+            if (i + 1 > 9) {
+                console.log("    Tweeted on: ", tweets[i].created_at + "\n");
+            } else {
+                console.log("   Tweeted on: ", tweets[i].created_at + "\n");
+            }  
+            
+            fs.appendFileSync("log.txt", (i + 1) + ". Tweet: " + tweets[i].text + "\nTweeted on: " + tweets[i].created_at + "\n\n", errorFunction());
+        };
 
-		// multiple hits - basicaly go with the best match
-		logThis("========================================");
-		logThis("Artist Name  : "  + data.tracks.items[0].artist[0].name);
-		logThis("Song Name  : " + data.tracks.items[0].name);
-		logThis("Preview Link : " + data.tracks.items[0].preview_url);
-		logThis("Album Title  : " + data.tracks.items[0].album.name);
-		logThis("========================================");
-	});
-}
+        console.log("--------------------------------------------------\n");
 
- // for  movie-this case
- function movieThis(receivedMovie) {
+        fs.appendFileSync("log.txt", "-----Tweets Log Entry End-----", errorFunctionEnd());
+    });
+};
 
- 	// first save the name of the movie if provided from command line
-	// otherwise default to "Mr. Nobody"
-	// use ternary function for ease of use
+// ======================= Spotify spotify-this-song ============================
+function searchSong(searchValue) {
 
-	var myMovie = receivedMovie ? receivedMovie : " Mr. Nobody" ;
+    // Default search value if no song is given
+    if (searchValue == "") {
+        searchValue = "The Sign Ace of Base";
+    }
 
-	// Then run a request to the OMDB API with the movie specified
-	Request("http://www.omdbapi.com/?t="  + myMovie + "&y=&plot=short&r=json&tomatoes=true", function(error,response,body){
+    // Accesses Spotify keys  
+    var spotify = new Spotify(keys.spotify);
 
-			// If the request is successful (i.e. if the response status code is 200)
-			if(!error && response.statusCode === 200 ) {
-				// log the command issued to the log.txt file
-				logCommand();
+    var searchLimit = "";
 
-				// Parse the returned data (body) and display movie info
-				logThis("========================================");
-				logThis("Movie Title  : " + JSON.parse(body).Title);
-				logThis("Release Year  : " + JSON.parse(body).Year);
-				logThis(" IMDB Rating  : "  + JSON.parse(body).imdbRating);
-				logThis("Rotten Tomatoes Rating of the movie  : "  + JSON.parse(body).tomatoRating);
-				logThis("Production Country"  + JSON.parse(body).Country);
-				logThis("Language  : " + JSON.parse(body).Language);
-				logThis("Plot  : " + JSON.parse(body).Plot);
-				logThis("Actors/Actresses:" + JSON.parse(body).Actor);
-				logThis("========================================");
-			}
-	});
-}
+    // Allows the user to input the number of returned spotify results, defaults 1 return if no input given
+    if (isNaN(parseInt(process.argv[3])) == false) {
+        searchLimit = process.argv[3];
 
-// for do-what-it-says case
-function doWhatItSays() {
-	// read in the random.txt file
-	fs.readFile('random.txt', 'utf-8', function(error, data){
+        console.log("\nYou requested to return: " + searchLimit + " songs");
+        
+        // Resets the searchValue to account for searchLimit
+        searchValue = "";
+        for (var i = 4; i < process.argv.length; i++) {        
+            searchValue += process.argv[i] + " ";
+        };
 
-		// if an error is caught in the read, display that and exit the function
-		if(error) return console.log("Filesystem Read Error  :" + error);
+    } else {
+               searchLimit = 1;
+    }
+   
+    // Searches Spotify with given values
+    spotify.search({ type: 'track', query: searchValue, limit: searchLimit }, function(respError, response) {
 
-		// split data into an array of function name and argument
-		var dataObject = data.split(',');
+        fs.appendFileSync("log.txt", "-----Spotify Log Entry Start-----\nProcessed on:\n" + Date() + "\n\n" + "terminal commands:\n" + process.argv + "\n\n" + "Data Output: \n", errorFunctionStart());
 
-		// define the function name and argument name
-		var myFunction = dataObject[0];
-		var myArgument = dataObject[1];
+        errorFunction();
 
-		// modify the myFunction received into the function names used in this app
-		switch(myFunction)  { 
-			case 'my-tweets'  : 
-			myFunction = 'myTweets';
-			break;
+        var songResp = response.tracks.items;
 
-			case 'spotify-this-song' :
-			myFunction = "mySpotify";
-			break;
+        for (var i = 0; i < songResp.length; i++) {
+            console.log("\n=======================================================\n");
+            console.log(("Artist: " + songResp[i].artists[0].name));
+            console.log(("Song title: " + songResp[i].name));
+            console.log(("Album name: " + songResp[i].album.name));
+            console.log(("URL Preview: " + songResp[i].preview_url));
+            console.log("\n=========================================================\n");
 
-			case "movie-this" :
-			myFunction = "movieThis";
-			break;
+            fs.appendFile("log.txt", "\n========= Result "+ (i+1) +" =========\nArtist: " + songResp[i].artists[0].name + "\nSong title: " + songResp[i].name + "\nAlbum name: " + songResp[i].album.name + "\nURL Preview: " + songResp[i].preview_url + "\n=============================\n", errorFunction());
+        }
 
-			default : 
-			console.log("Unexpected error ");
-		}
+        fs.appendFileSync("log.txt","-----Spotify Log Entry End-----\n\n", errorFunctionEnd());
+    })
+};
 
-	 	eval(myFunction)(myArgument);
-	});
-}
+// ++++++++++++++++++++ OMDB movie-this +++++++++++++++++++++++++
+function searchMovie(searchValue) {
 
-// logging function
-function logThis(dataToLog)  {
+    // Default search value if no movie is given
+    if (searchValue == "") {
+        searchValue = "Mr. Nobody";
+    }
 
-	// log the data to console
-	console.log(dataToLog);
+    var queryUrl = "http://www.omdbapi.com/?t=" + searchValue.trim() + "&y=&plot=short&apikey=trilogy";
 
-	// also append it to log.txt followed by new line escape
-	fs.appendFile("log.txt" , dataToLog + "\n" , function(err){
-		
-		// if there is an error log that then end function
-		if(err) return console.log("Error logging data to file  :"  + err);
-	});
-}
+    request(queryUrl, function(respError, response, body) {
 
-// logging command to log.txt file function
-function logCommand() {
+        fs.appendFileSync("log.txt", "-----OMDB Log Entry Start-----\n\nProcessed on:\n" + Date() + "\n\n" + "terminal commands:\n" + process.argv + "\n\n" + "Data Output: \n\n", errorFunctionStart());
 
-	// structure the string that equates to the command that was issued
-	if(commandArgument) {
+        errorFunction();
 
-		var tempString = "COMMAND: node liri.js " + command + " '" + commandArgument + "'";
-	} 
-	else {
-		var tempString = "COMMAND: node liri.js " + command;
-	}
+        if (JSON.parse(body).Error == 'Movie not found!' ) {
 
-	// append the command to log.txt followed by new line escape
-	fs.appendFile("log.txt" , tempString + "\n" , function(err){
+            console.log("\nI'm sorry, I could not find any movies that matched the title " + searchValue + ". Please check your spelling and try again.\n")
 
-		// if there is an error log that then end function
-		if (err) return console.log('Error logging command to file: ' + err);
+            fs.appendFileSync("log.txt", "I'm sorry, I could not find any movies that matched the title " + searchValue + ". Please check your spelling and try again.\n\n-----OMDB Log Entry End-----\n\n", errorFunctionEnd());
+        
+        } else {
 
-	});
+            movieBody = JSON.parse(body);
 
-}
+            console.log("\n++++++++++++++++ OMDB Search Results ++++++++++++++++\n");
+            console.log("Movie Title: " + movieBody.Title);
+            console.log("Year: " + movieBody.Year);
+            console.log("IMDB rating: " + movieBody.imdbRating);
 
+            // If there is no Rotten Tomatoes Rating
+            if (movieBody.Ratings.length < 2) {
 
+                console.log("There is no Rotten Tomatoes Rating for this movie.")
 
+                fs.appendFileSync("log.txt", "Movie Title: " + movieBody.Title + "\nYear: " + movieBody.Year + "\nIMDB rating: " + movieBody.imdbRating + "\nRotten Tomatoes Rating: There is no Rotten Tomatoes Rating for this movie \nCountry: " + movieBody.Country + "\nLanguage: " + movieBody.Language + "\nPlot: " + movieBody.Plot + "\nActors: " + movieBody.Actors + "\n\n-----OMDB Log Entry End-----\n\n", errorFunction());
+                
+            } else {
 
+                console.log("Rotten Tomatoes Rating: " + movieBody.Ratings[[1]].Value);
 
+                fs.appendFile("log.txt", "Movie Title: " + movieBody.Title + "\nYear: " + movieBody.Year + "\nIMDB rating: " + movieBody.imdbRating + "\nRotten Tomatoes Rating: " + movieBody.Ratings[[1]].Value + "\nCountry: " + movieBody.Country + "\nLanguage: " + movieBody.Language + "\nPlot: " + movieBody.Plot + "\nActors: " + movieBody.Actors + "\n\n-----OMDB Log Entry End-----\n\n", errorFunction());
+            }
+            
+            console.log("Country: " + movieBody.Country);
+            console.log("Language: " + movieBody.Language);
+            console.log("Plot: " + movieBody.Plot);
+            console.log("Actors: " + movieBody.Actors);
+            console.log("\n+++++++++++++++++++++++++++++++++++++++++++++++++\n");
+            console.log("========== Log Ended ============");
+        };      
+    });
+};
 
+// xxxxxxxxxxxxxxxxxx Random do-what-it-says xxxxxxxxxxxxxxxxxxxxxx
+function randomSearch() {
+
+    fs.readFile("random.txt", "utf8", function(respError, data) {
+
+        var randomArray = data.split(", ");
+
+        errorFunction();
+
+        if (randomArray[0] == "spotify-this-song") {
+            searchSong(randomArray[1]);
+        } else if (randomArray[0] == "movie-this") {
+            searchMovie(randomArray[1]);
+        } else {
+            getTweets();
+        }
+    });
+};
+
+// <<<<<<<<<<<<<<<<< Main Switch Case >>>>>>>>>>>>>>>>>>>>
+
+// Runs corresponding function based on user command
+switch (command) {
+    case "my-tweets":
+        getTweets();
+        break;
+    case "spotify-this-song":
+        searchSong(searchValue);
+        break;
+    case "movie-this":
+        searchMovie(searchValue);
+        break;
+    case "do-what-it-says":
+        randomSearch();
+        break;
+    default:
+        console.log("\nI'm sorry, " + command + "  not a command. Please try one of the following commands: \n  1. For a random search: node liri.js do-what-it-says \n  2. To search a movie title: node liri.js movie-this (with a movie title following) \n  3. To search Spotify for a song: node liri.js spotify-this-song (specify song title)\n 4. To see the last 20  tweets on Twitter: node liri.js my-tweets \n");
+};
